@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cafde5"
+    android:orientation="vertical"
+    android:padding="25dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/maintext"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/descrip"
+        android:textColor="@color/Black"
+        android:textColorHighlight="@android:color/holo_blue_dark"
+        android:textIsSelectable="true"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="-Erfan "
+        android:onClick="image"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/story"
+            android:textSize="17sp" />
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:drawableLeft="@drawable/like"
+            android:text="Like"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:onClick="result"/>
+        <Button
+            android:id="@+id/login"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:drawableLeft="@drawable/login"
+            tools:ignore="RtlCompat"
+            android:onClick="result"/>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="307dp"
+        android:layout_height="18dp"
+        android:text="Post liked by 0 times" />
+
+
+</LinearLayout>

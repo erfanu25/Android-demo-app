@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".worldcup">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="FIFA World Cup 2018 Prediction"
+        android:textColor="@android:color/holo_green_dark"
+        android:textStyle="italic"
+        android:layout_marginBottom="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#1960ed"
+        android:text="Select your Team"/>
+<RadioGroup
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/radio">
+
+    <RadioButton
+        android:id="@+id/bra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Brazil"
+        android:textSize="17dp"
+        android:textColor="#0d0c0d"/>
+    <RadioButton
+        android:id="@+id/arg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Argentina"
+        android:textSize="17dp"
+        android:textColor="#0d0c0d"/>
+    <RadioButton
+        android:id="@+id/ger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Germany"
+        android:textSize="17dp"
+        android:textColor="#0d0c0d"/>
+    <RadioButton
+        android:id="@+id/fra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="France"
+        android:textSize="17dp"
+        android:textColor="#0d0c0d"/>
+    <RadioButton
+        android:id="@+id/spa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Spain"
+        android:textSize="17dp"
+        android:textColor="#0d0c0d" />
+
+</RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#1960ed"
+        android:text="How much do you believe on your team ? "
+        android:layout_marginTop="8dp"/>
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="300dp"
+        android:layout_height="25dp"
+        android:max="100"
+        android:thumbTint="@android:color/holo_blue_bright"
+        android:scrollbarThumbVertical="@color/Black"
+        />
+    <TextView
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Submit"
+        android:textSize="20dp"
+        android:textColor="#e20202"
+        android:onClick="predict"
+        android:textAllCaps="false"/>
+
+    <TextView
+        android:id="@+id/res"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"/>
+
+
+</LinearLayout>
